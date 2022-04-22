@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login with google</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript">
+      function googleLogin() {
+        var url = document.getElementById("url").innerText
+        window.open(url, "_blank");
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Click here to Login using Google</h1>
+    <button onclick="googleLogin();">Oauth2 Login</button>
+    <div hidden id="url"><%= url %></div>
+  </body>
+</html>
